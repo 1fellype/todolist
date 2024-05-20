@@ -1,0 +1,99 @@
+/* Estilo geral */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 500px; /* Ajuste a largura do formulário */
+  margin: 0 auto; /* Centraliza o formulário na tela */
+}
+
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.todo-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de Tarefas */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.todo-item.completed {
+  background-color: #eee; /* Cor de fundo para tarefas concluídas */
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: scale(1.2); /* Aumenta o tamanho do checkbox */
+}
+
+.todo-text {
+  font-size: 16px;
+  line-height: 1.5; /* Espaçamento entre linhas */
+  color: #333;
+}
+
+.todo-text.completed {
+  text-decoration: line-through; /* Traça a linha no texto da tarefa concluída */
+  color: #aaa; /* Cor do texto para tarefas concluídas */
+}
+
+.todo-delete-button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-delete-button:hover {
+  background-color: #c8233c;
+}
